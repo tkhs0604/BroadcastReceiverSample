@@ -20,6 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.tkhs0604.broadcastreceiversample.feature.share.SharingTextBroadcastReceiver
 import com.tkhs0604.broadcastreceiversample.ui.theme.BroadcastReceiverSampleTheme
 
 class MainActivity : ComponentActivity() {

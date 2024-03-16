@@ -1,4 +1,4 @@
-package com.tkhs0604.broadcastreceiversample
+package com.tkhs0604.broadcastreceiversample.feature.share
 
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
