@@ -1,4 +1,4 @@
-package com.tkhs0604.broadcastreceiversample.feature.share
+package com.tkhs0604.broadcastreceiversample.common.share
 
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
@@ -6,7 +6,8 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.os.Build
+import android.os.Build.VERSION
+import android.os.Build.VERSION_CODES
 import android.widget.Toast
 import androidx.core.app.PendingIntentCompat
 import androidx.core.content.ContextCompat
@@ -14,7 +15,7 @@ import androidx.core.content.ContextCompat
 class SharingTextBroadcastReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        val selectedComponent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        val selectedComponent = if (VERSION.SDK_INT >= VERSION_CODES.TIRAMISU) {
             intent.getParcelableExtra(Intent.EXTRA_CHOSEN_COMPONENT, ComponentName::class.java)
         } else {
             @Suppress("DEPRECATION")

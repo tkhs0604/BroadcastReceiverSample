@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BroadcastReceiverSample"
 include(":app")
-include(":feature_share")
+include(":common_share")

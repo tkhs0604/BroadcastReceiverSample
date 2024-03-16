@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.tkhs0604.broadcastreceiversample.feature.share"
+    namespace = "com.tkhs0604.broadcastreceiversample.common.share"
     compileSdk = 34
 
     defaultConfig {
